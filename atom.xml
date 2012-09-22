@@ -4,7 +4,7 @@
   <title><![CDATA[Oslo Politi Moro]]></title>
   <link href="http://oslopolitimoro.github.com/atom.xml" rel="self"/>
   <link href="http://oslopolitimoro.github.com/"/>
-  <updated>2012-09-22T13:43:05+02:00</updated>
+  <updated>2012-09-22T13:44:15+02:00</updated>
   <id>http://oslopolitimoro.github.com/</id>
   <author>
     <name><![CDATA[jt]]></name>
@@ -20,6 +20,16 @@
     <id>http://oslopolitimoro.github.com/blog/2012/09/22/gaffeltruck-2</id>
     <content type="html"><![CDATA[<blockquote><p>Vi har funnet gaffeltrucken, men ikke truckførerne.
 - <a href="https://twitter.com/oslopolitiops/statuses/249303816082702338">Operasjonssentralen</a></p></blockquote>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Gaffeltruck]]></title>
+    <link href="http://oslopolitimoro.github.com/blog/2012/09/22/gaffeltruck-1/"/>
+    <updated>2012-09-22T17:09:00+02:00</updated>
+    <id>http://oslopolitimoro.github.com/blog/2012/09/22/gaffeltruck-1</id>
+    <content type="html"><![CDATA[<blockquote><p>To berusede personer har satt seg på en gaffeltruck og kjører på ring 3 mot Radiumhospitalet
+- <a href="http://twitter.com/oslopolitiops/statuses/249299247399325696">Operasjonssentralen</a></p></blockquote>
 ]]></content>
   </entry>
   
@@ -40,16 +50,6 @@
     <id>http://oslopolitimoro.github.com/blog/2012/09/21/hester-1</id>
     <content type="html"><![CDATA[<blockquote><p>Mens vi holder på med alle disse alvorlige oppdragene får vi melding om tre løse hester ved Gaustad Finner du dem, fang dem og ring oss,Takk
 - <a href="http://twitter.com/oslopolitiops/statuses/249324399566663680">Operasjonssentralen</a></p></blockquote>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Gaffeltruck]]></title>
-    <link href="http://oslopolitimoro.github.com/blog/2012/09/21/gaffeltruck-1/"/>
-    <updated>2012-09-21T17:09:00+02:00</updated>
-    <id>http://oslopolitimoro.github.com/blog/2012/09/21/gaffeltruck-1</id>
-    <content type="html"><![CDATA[<blockquote><p>To berusede personer har satt seg på en gaffeltruck og kjører på ring 3 mot Radiumhospitalet
-- <a href="http://twitter.com/oslopolitiops/statuses/249299247399325696">Operasjonssentralen</a></p></blockquote>
 ]]></content>
   </entry>
   
