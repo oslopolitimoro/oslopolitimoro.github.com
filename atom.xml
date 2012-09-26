@@ -4,7 +4,7 @@
   <title><![CDATA[Oslo Politi Moro]]></title>
   <link href="http://oslopolitimoro.github.com/atom.xml" rel="self"/>
   <link href="http://oslopolitimoro.github.com/"/>
-  <updated>2012-09-22T16:10:20+02:00</updated>
+  <updated>2012-09-26T07:49:02+02:00</updated>
   <id>http://oslopolitimoro.github.com/</id>
   <author>
     <name><![CDATA[oslopolitimoro]]></name>
@@ -12,6 +12,16 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Hester]]></title>
+    <link href="http://oslopolitimoro.github.com/blog/2012/09/23/hester-3/"/>
+    <updated>2012-09-23T17:56:00+02:00</updated>
+    <id>http://oslopolitimoro.github.com/blog/2012/09/23/hester-3</id>
+    <content type="html"><![CDATA[<blockquote><p>Nå er hestene igjen løse ved Gaustad. Denne gangen forsøker vi å bruke politiets sperrebånd, vi tror nemlig hestene vil respektere det.
+- <a href="https://twitter.com/oslopolitiops/statuses/250036062792085504">Operasjonssentralen</a></p></blockquote>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Gaffeltruck]]></title>
