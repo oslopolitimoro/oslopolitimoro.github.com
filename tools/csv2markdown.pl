@@ -4,7 +4,7 @@
 # Takes a csv as input file and puts out every tupel as markdown file
 #   ready for octopress to deploy
 #
-# Requires Text::CSV, Getopt::Long, Text::Iconv,
+# Requires Text::CSV, Getopt::Long, File::Slurp
 #
 # Syntax:
 #	perl csv2markdown.pl -i <csvinputfile>
