@@ -4,7 +4,7 @@
 # Greps the tweet content from Twitter tweet and outputs
 # a csv line.
 #
-# Requires HTML::Treebuilder
+# Requires HTML::Treebuilder, LWP::UserAgent
 #
 # Syntax:
 #	perl greptweet.pl <url>
@@ -15,25 +15,20 @@
 #
 # This is used to create a CSV files of of tweets serving as source for another scripts creating the markdown files for Octopress.
 # ------------------------------------------------------------------------
+use v5.10.1;
+
 use strict;
+use warnings;
+use utf8;
 use LWP::UserAgent;
 use HTML::TreeBuilder;
 
-sub usage {    # Routine prints the Syntax
-    print "\n\nSyntax:
-		script.pl: Tweet-URL
-	Example: 
-		perl script.pl https://api.twitter.com/1.1/statuses/show.json?id=250036062792085504
-		\n";
-}
-
-usage() && die "\n => Error: no URL specified. Abort.\n\n"
-  unless ( @ARGV == 1 );
+die usage() unless @ARGV;
 
 # Get HTML Tweet from TWitter
 my $ua = new LWP::UserAgent;
 $ua->timeout(120);
-my $url         = @ARGV[0];
+my $url         = $ARGV[0];
 my $request     = new HTTP::Request( 'GET', $url );
 my $response    = $ua->request($request);
 my $HTMLcontent = $response->content();
@@ -42,20 +37,14 @@ my $HTMLcontent = $response->content();
 my $tree = HTML::TreeBuilder->new_from_content($HTMLcontent);
 $tree->parse($HTMLcontent);
 
-# Get Tweet Title
-my ($title) = $tree->look_down( '_tag', 'title' );
+my $title      = $tree->look_down( '_tag',  'title' );         # Get Tweet Title
+my $searchtext = $tree->look_down( 'class', 'js-tweet-text' ); # Get Tweet Text
 
-# Get Tweet Text
-my ($searchtext) = $tree->look_down( 'class', 'js-tweet-text' );
+# Get Tweet Timestamp line by parsing downwards
+my $tweettimestamp = $tree->look_down( "_tag", "a", "class",
+    "tweet-timestamp js-permalink js-nav" );
 
-# Get Tweet Timestamp line
-my ($tweettimestamp) = $tree->look_down(
-    'tag',
-    'a' and 'class',
-    'tweet-timestamp js-permalink js-nav'
-);
-
-# Get and format title (without the stupid "Twitter / <account>: "-stuff)
+# Get and format title (without the stupid "Twitter / <account>: "-stuff), we don't want that
 my $HTMLTitle = $title->as_text();
 $HTMLTitle =~ s/^[^\:]+\:\s//i;
 $HTMLTitle =~ s/\;/\&#59;/i;
@@ -65,28 +54,35 @@ my $HTMLText = $searchtext->as_text();
 $HTMLText =~ s/^\s+//i;
 $HTMLText =~ s/;/\&#59;/i;
 
-# Get and format the Tweet timestamp.
+# Grep and format the Tweet timestamp.
 my $HTMLTime = $tweettimestamp->as_HTML();
 $HTMLTime =~
-  m/title\=\"(\d{1,2}):(\d{1,2})\s(\w{2})\s\-\s(\d{1,2})\s(\w{3})\s(\d{2})\"/i;
-my $hour = $1;
-if ( lc($3) eq "pm" && $hour < 12 ) {
-    $hour += 12;
-}
-elsif ( lc($3) eq "pm" && $hour == "12" ) {
-    $hour = "00";
-}
-my $minute  = $2;
-my $day     = $4;
-my $year    = "20" . $6;
-my %mon2num = qw(
+m/title\=\"(?<hour>\d{1,2}):(?<minute>\d{1,2})\s(?<meridiem>\w{2})\s\-\s(?<day>\d{1,2})\s(?<month>\w{3})\s(?<year>\d{2})\"/i;
+my $tweethour   = $+{hour};
+my $tweetminute = $+{minute};
+my $tweetday    = $+{day};
+my $tweetyear   = "20" . $+{year};
+my %mon2num     = qw(
   jan 1  feb 2  mar 3  apr 4  mai 5  jun 6
   jul 7  aug 8  sep 9  okt 10 nov 11 des 12
 );
-my $month = $mon2num{"$5"};
-if ( length($month) eq 1 ) { $month = "0" . $month }
-if ( length($day)   eq 1 ) { $day   = "0" . $day }
-$HTMLTime = $year . "-" . $month . "-" . $day . " " . $hour . ":" . $minute;
+my $tweetmonth = $mon2num{"$+{month}"};
+
+if ( lc( $+{meridiem} ) eq "pm" && $tweethour < 12 ) {
+    $tweethour += 12;
+}
+elsif ( lc( $+{meridiem} ) eq "pm" && $tweethour == "12" ) {
+    $tweethour = "00";
+}
+
+if ( length($tweetmonth) eq 1 ) { $tweetmonth = "0" . $tweetmonth; }
+if ( length($tweetday)   eq 1 ) { $tweetday   = "0" . $tweetday }
+$HTMLTime =
+    $tweetyear . "-"
+  . $tweetmonth . "-"
+  . $tweetday . " "
+  . $tweethour . ":"
+  . $tweetminute;
 
 # Final output line
 print "\""
@@ -97,6 +93,8 @@ print "\""
 
 # Cleanup
 $tree->delete;
+
+sub usage { "Syntax:\n $0 Tweet-url\n" }
 
 # Some Syntax Reference
 ## Test-tweet
