@@ -13,3 +13,7 @@ Av og til sitter noen bak twitter-accounten hos Oslo Politiet som har en helt j�
 Hvis du lurer på noe og vil vite mer om det ta gjerne [kontakt](mailto://kontakt@oslopolitimoro.no).
 
 Jeg har gått gjennom alle tweets fra 25. februar 2012, men har ikke funnet noen tidligere. Hvis noen har tilgang til tidligere tweets eller vet om en tweet som mangler og burde vær her: send inn!
+
+
+# Links
+* [2012-10-17: Han er Oslo-politiets Twitter-sjef](http://www.vg.no/teknologi/artikkel.php?artid=10047021)
