@@ -1,0 +1,9 @@
+---
+layout: post
+title: "Politiet fikk melding om et ..."
+date: 2012-10-20 19:19
+comments: true
+categories: 
+---
+> Politiet fikk melding om et samboerpar som kranglet. Grunnen var muligens eierskapet til en uskyldig katt på stedet. Politiet rykket ikke ut 
+- [Operasjonssentralen](http://twitter.com/oslopolitiops/statuses/259841273584840705)
