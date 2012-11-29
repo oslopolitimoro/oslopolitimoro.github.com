@@ -1,0 +1,9 @@
+---
+layout: post
+title: "Årsaken til brannalarmen i ..."
+date: 2012-11-28 23:31
+comments: true
+categories: 
+---
+> Årsaken til brannalarmen i Kirkeveien lokalisert. Det ble svidde rundstykker til frokost idag... 
+- [Operasjonssentralen](http://twitter.com/oslopolitiops/statuses/274052884654616576)
