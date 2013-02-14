@@ -1,6 +1,6 @@
 # Makefile for  deploying the blogg ... the BLOGG!!!
 
-.PHONY: deploy install clean
+.PHONY: deploy install clean preview
 
 #2
 # Default rule - create and install
@@ -21,3 +21,8 @@ deploy:
 # Clean
 clean:
 	rm *.mkd
+
+# Preview
+preview:
+	rake generate
+	rake preview 
