@@ -14,6 +14,8 @@
 #	2012-09-23 17:56;http://twitter.com/oslopolitiops/statuses/250036062792085504;Nå er hestene igjen løse ...;Nå er hestene igjen løse ved Gaustad. Denne gangen forsøker vi å bruke politiets sperrebånd, vi tror nemlig hestene vil respektere det.
 #
 # This is used to create a CSV files of of tweets serving as source for another scripts creating the markdown files for Octopress.
+#
+# Update: 20130219: Date matching syntax updated due to changes in the sourcecode of the Twitter webpage.
 # ------------------------------------------------------------------------
 use v5.10.1;
 
@@ -57,23 +59,17 @@ $HTMLText =~ s/;/\&#59;/i;
 # Grep and format the Tweet timestamp.
 my $HTMLTime = $tweettimestamp->as_HTML();
 $HTMLTime =~
-m/title\=\"(?<hour>\d{1,2}):(?<minute>\d{1,2})\s(?<meridiem>\w{2})\s\-\s(?<day>\d{1,2})\s(?<month>\w{3})\s(?<year>\d{2})\"/i;
+m/title\=\"(?<hour>\d{1,2}):(?<minute>\d{1,2})\s\-\s(?<day>\d{1,2})\.\s(?<month>\w{3})\.\s(?<year>\d{4})\"/i;
+
 my $tweethour   = $+{hour};
 my $tweetminute = $+{minute};
 my $tweetday    = $+{day};
-my $tweetyear   = "20" . $+{year};
+my $tweetyear   = $+{year};
 my %mon2num     = qw(
   jan 1  feb 2  mar 3  apr 4  mai 5  jun 6
   jul 7  aug 8  sep 9  okt 10 nov 11 des 12
 );
 my $tweetmonth = $mon2num{"$+{month}"};
-
-if ( lc( $+{meridiem} ) eq "pm" && $tweethour < 12 ) {
-    $tweethour += 12;
-}
-elsif ( lc( $+{meridiem} ) eq "pm" && $tweethour == "12" ) {
-    $tweethour = "00";
-}
 
 if ( length($tweetmonth) eq 1 ) { $tweetmonth = "0" . $tweetmonth; }
 if ( length($tweetday)   eq 1 ) { $tweetday   = "0" . $tweetday }
