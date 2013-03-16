@@ -1,0 +1,9 @@
+---
+layout: post
+title: "Politiet fikk melding om en ..."
+date: 2013-03-15 12:53
+comments: true
+categories: 
+---
+> Politiet fikk melding om en person med ei geit i bånd området Torggata. Vi fant ikke ekvipasjen, forhåpentligvis er de på et mer egnet sted.
+- [Operasjonssentralen](http://twitter.com/oslopolitiops/statuses/312531886004109312)

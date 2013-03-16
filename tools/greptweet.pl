@@ -38,13 +38,14 @@ my $HTMLcontent = $response->content();
 # Parse HTMLcontent
 my $tree = HTML::TreeBuilder->new_from_content($HTMLcontent);
 $tree->parse($HTMLcontent);
+$tree->eof();
 
 my $title      = $tree->look_down( '_tag',  'title' );         # Get Tweet Title
 my $searchtext = $tree->look_down( 'class', 'js-tweet-text' ); # Get Tweet Text
 
 # Get Tweet Timestamp line by parsing downwards
-my $tweettimestamp = $tree->look_down( "_tag", "a", "class",
-    "tweet-timestamp js-permalink js-nav" );
+my $tweettimestamp = $tree->look_down( "_tag", "span", "class", "metadata");
+#my $tweettimestamp = $tree->look_down( "_tag", "a", "class","tweet-timestamp js-permalink js-nav" );
 
 # Get and format title (without the stupid "Twitter / <account>: "-stuff), we don't want that
 my $HTMLTitle = $title->as_text();
@@ -57,20 +58,24 @@ $HTMLText =~ s/^\s+//i;
 $HTMLText =~ s/;/\&#59;/i;
 
 # Grep and format the Tweet timestamp.
-my $HTMLTime = $tweettimestamp->as_HTML();
-$HTMLTime =~
-m/title\=\"(?<hour>\d{1,2}):(?<minute>\d{1,2})\s\-\s(?<day>\d{1,2})\.\s(?<month>\w{3})\.\s(?<year>\d{4})\"/i;
+#my $HTMLTime = $tweettimestamp->as_HTML();
+my $HTMLTime = $tweettimestamp->as_text();
+
+$HTMLTime =~ m/\s+(?<hour>\d{1,2}):(?<minute>\d{1,2})\s(?<meridiem>\w{2})\s\-\s(?<day>\d{1,2})\s(?<month>\w{3})\s(?<year>\d{2})\s+/i;
 
 my $tweethour   = $+{hour};
 my $tweetminute = $+{minute};
 my $tweetday    = $+{day};
-my $tweetyear   = $+{year};
+my $tweetyear   = "20" . $+{year};
+my $meridiem    = $+{meridiem};
 my %mon2num     = qw(
   jan 1  feb 2  mar 3  apr 4  mai 5  jun 6
   jul 7  aug 8  sep 9  okt 10 nov 11 des 12
 );
 my $tweetmonth = $mon2num{"$+{month}"};
 
+if ( $meridiem eq 'PM' ) { $tweethour += 12; }
+if ( $tweethour == '24') { $tweethour = '00' }
 if ( length($tweetmonth) eq 1 ) { $tweetmonth = "0" . $tweetmonth; }
 if ( length($tweetday)   eq 1 ) { $tweetday   = "0" . $tweetday }
 $HTMLTime =
