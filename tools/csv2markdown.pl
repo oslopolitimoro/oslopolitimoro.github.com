@@ -53,7 +53,10 @@ sub generate_mkd_file_from {
     $content =~ s/\<link\>/$link/ig;
 
     # Make markdownlinks of the text if available
-    $text =~ s|\s(http://[^\s]+)| \[$1\]($1)|;
+    $content =~ s|\s(http://[^\s]+)| \[$1\]($1)|;
+    
+    # Link paragraphs to the norwegian law
+    $content =~ s|§\s?(\d{1,4})|\[§ $1\](http://www.lovdata.no/all/hl-19020522-010.html#$1)|gi;
 
     # Build up filename and remove everything that doesn't belong there.
     my $filename = $date . "-" . lc($title);
