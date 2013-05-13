@@ -1,0 +1,9 @@
+---
+layout: post
+title: "Politiet har stanset en taxi ..."
+date: 2013-05-13 2:31
+comments: true
+categories: 
+---
+> Politiet har stanset en taxi i Kongsveien. Fører har ikke gyldig førerkort. Var på vei til sin advokat for å snakke om et førerkortbeslag
+- [Operasjonssentralen](http://twitter.com/oslopolitiops/statuses/333877230914662400)
