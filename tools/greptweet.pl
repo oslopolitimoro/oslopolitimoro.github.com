@@ -41,7 +41,7 @@ $tree->parse($HTMLcontent);
 $tree->eof();
 
 my $title      = $tree->look_down( '_tag',  'title' );         # Get Tweet Title
-my $searchtext = $tree->look_down( 'class', 'js-tweet-text' ); # Get Tweet Text
+my $searchtext = $tree->look_down( 'class', 'js-tweet-text tweet-text' ); # Get Tweet Text
 
 # Get Tweet Timestamp line by parsing downwards
 my $tweettimestamp = $tree->look_down( "_tag", "span", "class", "metadata");
