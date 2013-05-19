@@ -5,5 +5,6 @@ date: 2013-03-28 9:05
 comments: true
 categories: 
 ---
+
 > Patruljer leter etter en ambulanse som akkurat er stjålet fra LEgevakta. Den er trolig i området St. Hanshaugen.
 - [Operasjonssentralen](https://twitter.com/oslopolitiops/statuses/317306557782163456)

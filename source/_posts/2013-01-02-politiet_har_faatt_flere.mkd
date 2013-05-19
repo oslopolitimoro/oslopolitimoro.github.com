@@ -5,5 +5,6 @@ date: 2013-01-02 11:05
 comments: true
 categories: 
 ---
+
 > Politiet har fått flere meldinger om en løs hund i Smestadtunnelen, retning øst i vestgående felt. Skaper farlige situasjoner. 
 - [Operasjonssentralen](https://twitter.com/oslopolitiops/statuses/286548837508726784)

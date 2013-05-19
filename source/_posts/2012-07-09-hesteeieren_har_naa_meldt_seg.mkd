@@ -5,5 +5,6 @@ date: 2012-07-09 04:59
 comments: true
 categories: 
 ---
+<div style="float:right; margin:5px; position:relative;top:-130px;"><iframe width="150" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?q=Hesteeieren%20har%20n%E5%20meldt%20seg%20Hesten%20som%20heter%20Leonora%20skulle%20v%E6re%20p%E5%20sommerbeite%2C%20men%20mulig%20golf%20var%20mer%20spennende%20Eier%20og%20hest%20gjennforenes%20,+Oslo&hl=no&t=m&z=14&output=embed&iwloc=&"></iframe><br/><small><a href="http://maps.google.com/maps?q=Hesteeieren%20har%20n%E5%20meldt%20seg%20Hesten%20som%20heter%20Leonora%20skulle%20v%E6re%20p%E5%20sommerbeite%2C%20men%20mulig%20golf%20var%20mer%20spennende%20Eier%20og%20hest%20gjennforenes%20,+Oslo&hl=no&t=m&z=14&source=embed&iwloc=A" style="color:#0000FF;text-align:left" target="_new">Vis st&oslash;rre kart</a></small></div>
 > Hesteeieren har nå meldt seg Hesten som heter Leonora skulle være på sommerbeite, men mulig golf var mer spennende Eier og hest gjennforenes 
 - [Operasjonssentralen](http://twitter.com/oslopolitiops/status/222298847379066880)

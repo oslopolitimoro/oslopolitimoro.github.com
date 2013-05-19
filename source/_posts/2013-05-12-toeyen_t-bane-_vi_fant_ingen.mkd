@@ -5,5 +5,6 @@ date: 2013-05-12 10:09
 comments: true
 categories: 
 ---
+
 > Tøyen T-bane- Vi fant ingen som var skadd, og heller ingen mistenkte. Kun funn av en smørkniv. Vi avslutter søket.
 - [Operasjonssentralen](http://twitter.com/oslopolitiops/statuses/333630126023651330)

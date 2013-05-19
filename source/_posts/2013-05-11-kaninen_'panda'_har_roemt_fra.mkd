@@ -1,0 +1,10 @@
+---
+layout: post
+title: "Kaninen 'Panda' har rømt fra ..."
+date: 2013-05-11 3:12
+comments: true
+categories: 
+---
+<div style="float:right; margin:5px; position:relative;top:-130px;"><iframe width="150" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?q=Arilds%20vei%0A,+Oslo&hl=no&t=m&z=14&output=embed&iwloc=&"></iframe><br/><small><a href="http://maps.google.com/maps?q=Arilds%20vei%0A,+Oslo&hl=no&t=m&z=14&source=embed&iwloc=A" style="color:#0000FF;text-align:left" target="_new">Vis st&oslash;rre kart</a></small></div>
+> Kaninen 'Panda' har rømt fra Arilds vei på Kjelsås. Den er oppkalt etter utseende sitt. Ring 02800 hvis du finner en liten panda på rømmen.
+- [Operasjonssentralen](http://twitter.com/oslopolitiops/statuses/333162671400693761)

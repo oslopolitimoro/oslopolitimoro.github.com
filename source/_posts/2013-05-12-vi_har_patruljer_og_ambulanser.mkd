@@ -5,5 +5,6 @@ date: 2013-05-12 9:31
 comments: true
 categories: 
 ---
+
 > Vi har patruljer og ambulanser på Tøyen T-banestasjon, hvor det ble meldt om slåssing og knivstikking.
 - [Operasjonssentralen](http://twitter.com/oslopolitiops/statuses/333620394789588993)

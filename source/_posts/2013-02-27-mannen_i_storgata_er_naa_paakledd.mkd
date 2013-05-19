@@ -5,5 +5,6 @@ date: 2013-02-27 12:33
 comments: true
 categories: 
 ---
+<div style="float:right; margin:5px; position:relative;top:-130px;"><iframe width="150" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?q=Storgata%0A,+Oslo&hl=no&t=m&z=14&output=embed&iwloc=&"></iframe><br/><small><a href="http://maps.google.com/maps?q=Storgata%0A,+Oslo&hl=no&t=m&z=14&source=embed&iwloc=A" style="color:#0000FF;text-align:left" target="_new">Vis st&oslash;rre kart</a></small></div>
 > Mannen i Storgata er nå påkledd og har satt fra seg søppelbøtta. Blir fraktet til arresten for å få sove ut rusen.
 - [Operasjonssentralen](http://twitter.com/oslopolitiops/statuses/306864542854561792)

@@ -21,7 +21,8 @@ use warnings;
 use utf8;
 use Getopt::Long;    # Handling parameters.
 use Text::CSV;       # CSV file handling.
-use File::Slurp;
+use File::Slurp;     # File handling
+use streetmatch qw(:DEFAULT);  # Module for matching the streets from the tweets
 
 # Fetch filename from command line
 die usage() unless @ARGV;
@@ -46,11 +47,17 @@ sub usage {"Syntax:\n $0 -i|--inputfile <input.csv>\n"}
 sub generate_mkd_file_from {
     my ( $date, $link, $title, $text ) = @_;
 
+    # Map streetnames to Google Maps
+    my @streetfiles = ('street.1.txt','street.2.txt');
+    my @streetnames = streetmatch::grepstreetnames (@streetfiles);
+    my $htmlmap = streetmatch::matchString2Street (@streetnames,$text);
+    
     my $content = read_file( \*DATA );    # Get template from __DATA__
     $content =~ s/\<title\>/$title/ig;
     $content =~ s/\<time\>/$date/ig;
     $content =~ s/\<text\>/$text/ig;
     $content =~ s/\<link\>/$link/ig;
+    $content =~ s/\<map\>/${htmlmap}/ig;
 
     # Make markdownlinks of the text if available
     $content =~ s|\s(http://[^\s]+)| \[$1\]($1)|;
@@ -80,5 +87,6 @@ date: <time>
 comments: true
 categories: 
 ---
+<map>
 > <text>
 - [Operasjonssentralen](<link>)

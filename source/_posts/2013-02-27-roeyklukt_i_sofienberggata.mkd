@@ -5,5 +5,6 @@ date: 2013-02-27 08:17
 comments: true
 categories: 
 ---
+<div style="float:right; margin:5px; position:relative;top:-130px;"><iframe width="150" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?q=Sofienberggata%0A,+Oslo&hl=no&t=m&z=14&output=embed&iwloc=&"></iframe><br/><small><a href="http://maps.google.com/maps?q=Sofienberggata%0A,+Oslo&hl=no&t=m&z=14&source=embed&iwloc=A" style="color:#0000FF;text-align:left" target="_new">Vis st&oslash;rre kart</a></small></div>
 > Røyklukt i Sofienberggata: en kjenning av nødetatene slo til igjen.. tørrkokt kjele/matlaging. Ingen er skadet og vi tar en prat med kokken.
 - [Operasjonssentralen](http://twitter.com/oslopolitiops/statuses/306800129724256256)

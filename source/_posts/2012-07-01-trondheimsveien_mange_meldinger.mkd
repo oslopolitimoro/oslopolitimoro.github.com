@@ -5,5 +5,6 @@ date: 2012-07-01 02:17
 comments: true
 categories: 
 ---
+<div style="float:right; margin:5px; position:relative;top:-130px;"><iframe width="150" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?q=Trondheimsveien%2C%20mange%20meldinger%20om%20naken%20mann%20som%20g%E5r%20midt%20i%20veien%2C%20politiet%20er%20p%E5%20vei%20,+Oslo&hl=no&t=m&z=14&output=embed&iwloc=&"></iframe><br/><small><a href="http://maps.google.com/maps?q=Trondheimsveien%2C%20mange%20meldinger%20om%20naken%20mann%20som%20g%E5r%20midt%20i%20veien%2C%20politiet%20er%20p%E5%20vei%20,+Oslo&hl=no&t=m&z=14&source=embed&iwloc=A" style="color:#0000FF;text-align:left" target="_new">Vis st&oslash;rre kart</a></small></div>
 > Trondheimsveien, mange meldinger om naken mann som går midt i veien, politiet er på vei 
 - [Operasjonssentralen](http://twitter.com/oslopolitiops/status/219359063144808448)

@@ -5,5 +5,6 @@ date: 2013-04-09 12:01
 comments: true
 categories: 
 ---
+
 > Ruinparken: Viser seg være en ansatt i kulturetaten som driver med restaurering av bygningen(e).
 - [Operasjonssentralen](https://twitter.com/oslopolitiops/statuses/321518128196620288)
