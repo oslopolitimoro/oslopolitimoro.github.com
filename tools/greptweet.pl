@@ -62,7 +62,6 @@ $HTMLText =~ s/;/\&#59;/i;
 # Grep and format the Tweet timestamp.
 #my $HTMLTime = $tweettimestamp->as_HTML();
 my $HTMLTime = $tweettimestamp->as_text();
-say "'".$HTMLTime."'";
 
 $HTMLTime =~ m/\s+(?<hour>\d{1,2})(\:|\.)(?<minute>\d{1,2})\s(?<meridiem>\w{2})\s(\W)+(?<day>\d{1,2})\.\s(?<month>\w{3})\s(?<year>\d{2})\s+/i;
 
