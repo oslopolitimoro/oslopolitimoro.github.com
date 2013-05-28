@@ -16,6 +16,8 @@
 # This is used to create a CSV files of of tweets serving as source for another scripts creating the markdown files for Octopress.
 #
 # Update: 20130219: Date matching syntax updated due to changes in the sourcecode of the Twitter webpage.
+# Update: 20130517: Matching for Text/title failed due to changes in the sourcecode of the Twitter webpage.
+# Update: 20130528: Changed Regex for matching metadata. Failed because they've changed it again.
 # ------------------------------------------------------------------------
 use v5.10.1;
 
@@ -60,8 +62,9 @@ $HTMLText =~ s/;/\&#59;/i;
 # Grep and format the Tweet timestamp.
 #my $HTMLTime = $tweettimestamp->as_HTML();
 my $HTMLTime = $tweettimestamp->as_text();
+say "'".$HTMLTime."'";
 
-$HTMLTime =~ m/\s+(?<hour>\d{1,2}):(?<minute>\d{1,2})\s(?<meridiem>\w{2})\s\-\s(?<day>\d{1,2})\s(?<month>\w{3})\s(?<year>\d{2})\s+/i;
+$HTMLTime =~ m/\s+(?<hour>\d{1,2})(\:|\.)(?<minute>\d{1,2})\s(?<meridiem>\w{2})\s(\W)+(?<day>\d{1,2})\.\s(?<month>\w{3})\s(?<year>\d{2})\s+/i;
 
 my $tweethour   = $+{hour};
 my $tweetminute = $+{minute};
