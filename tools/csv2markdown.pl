@@ -72,7 +72,8 @@ sub generate_mkd_file_from {
     $filename =~ s/ø/oe/gi;
     $filename =~ s/æ/ae/gi;
     $filename =~ s/\s+/_/g;
-    $filename =~ s/[\;\:\,\.]+//g;
+    $filename =~ s/\_{2,}/\_/g;
+    $filename =~ s/[\;\:\,\.\']+//g;
     $filename =~ s/\_+$//ig;
     $filename .= ".mkd";
 
