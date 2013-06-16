@@ -1,0 +1,10 @@
+---
+layout: post
+title: "Åkebergveien: en person tente ..."
+date: 2013-06-15 00:35
+comments: true
+categories: 
+---
+<div style="float:right; margin:5px; position:relative;top:-130px;"><iframe width="150" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?q=%22%C5kebergveien,+Oslo&hl=no&t=m&z=14&output=embed&iwloc=&"></iframe><br/><small><a href="http://maps.google.com/maps?q=%22%C5kebergveien,+Oslo&hl=no&t=m&z=14&source=embed&iwloc=A" style="color:#0000FF;text-align:left" target="_new">Vis st&oslash;rre kart</a></small></div>
+> Åkebergveien: en person tente på en søppelkasse i protest mot at han hadde blitt sluppet ut av politiarresten. Protesten ble tatt til følge
+- [Operasjonssentralen](https://twitter.com/oslopolitiops/status/345988031473397760)
