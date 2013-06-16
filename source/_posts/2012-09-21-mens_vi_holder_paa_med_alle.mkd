@@ -5,6 +5,6 @@ date: 2012-09-21 18:49
 comments: true
 categories: 
 ---
-<div style="float:right; margin:5px; position:relative;top:-130px;"><iframe width="150" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?q=Mens%20vi%20holder%20p%E5%20med%20alle%20disse%20alvorlige%20oppdragene%20f%E5r%20vi%20melding%20om%20tre%20l%F8se%20hester%20ved%20Gaustad%20Finner%20du%20dem%2C%20fang%20dem%20og%20ring%20oss%2CTakk%20,+Oslo&hl=no&t=m&z=14&output=embed&iwloc=&"></iframe><br/><small><a href="http://maps.google.com/maps?q=Mens%20vi%20holder%20p%E5%20med%20alle%20disse%20alvorlige%20oppdragene%20f%E5r%20vi%20melding%20om%20tre%20l%F8se%20hester%20ved%20Gaustad%20Finner%20du%20dem%2C%20fang%20dem%20og%20ring%20oss%2CTakk%20,+Oslo&hl=no&t=m&z=14&source=embed&iwloc=A" style="color:#0000FF;text-align:left" target="_new">Vis st&oslash;rre kart</a></small></div>
+
 > Mens vi holder på med alle disse alvorlige oppdragene får vi melding om tre løse hester ved Gaustad Finner du dem, fang dem og ring oss,Takk 
 - [Operasjonssentralen](https://twitter.com/oslopolitiops/statuses/249324399566663680)

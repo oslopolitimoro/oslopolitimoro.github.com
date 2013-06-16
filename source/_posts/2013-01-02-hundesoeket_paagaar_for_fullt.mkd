@@ -5,6 +5,6 @@ date: 2013-01-02 11:31
 comments: true
 categories: 
 ---
-
+<div style="float:right; margin:5px; position:relative;top:-130px;"><iframe width="150" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?q=T%E5sentunnelen,+Oslo&hl=no&t=m&z=14&output=embed&iwloc=&"></iframe><br/><small><a href="http://maps.google.com/maps?q=T%E5sentunnelen,+Oslo&hl=no&t=m&z=14&source=embed&iwloc=A" style="color:#0000FF;text-align:left" target="_new">Vis st&oslash;rre kart</a></small></div>
 > Hundesøket pågår for fullt. Hunden er nå i vestgående løp like etter Tåsentunnelen. Stakkars hunden er redd, lar seg ikke fange så lett. 
 - [Operasjonssentralen](https://twitter.com/oslopolitiops/statuses/286555372716691456)

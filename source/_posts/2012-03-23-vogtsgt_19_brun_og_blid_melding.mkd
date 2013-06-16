@@ -5,6 +5,6 @@ date: 2012-03-23 18:26
 comments: true
 categories: 
 ---
-<div style="float:right; margin:5px; position:relative;top:-130px;"><iframe width="150" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?q=Vogtsgt%2019%2C%20Brun%20og%20Blid%2C%20melding%20om%20innbrudd%2C%20alarmen%20g%E5r%20i%20flere%20soner%2C%20politiet%20er%20p%E5%20vei%20,+Oslo&hl=no&t=m&z=14&output=embed&iwloc=&"></iframe><br/><small><a href="http://maps.google.com/maps?q=Vogtsgt%2019%2C%20Brun%20og%20Blid%2C%20melding%20om%20innbrudd%2C%20alarmen%20g%E5r%20i%20flere%20soner%2C%20politiet%20er%20p%E5%20vei%20,+Oslo&hl=no&t=m&z=14&source=embed&iwloc=A" style="color:#0000FF;text-align:left" target="_new">Vis st&oslash;rre kart</a></small></div>
+
 > Vogtsgt 19, Brun og Blid, melding om innbrudd, alarmen går i flere soner, politiet er på vei 
 - [Operasjonssentralen](https://twitter.com/oslopolitiops/status/183379178442342400)

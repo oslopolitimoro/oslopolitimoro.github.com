@@ -5,6 +5,6 @@ date: 2012-07-21 12:25
 comments: true
 categories: 
 ---
-
+<div style="float:right; margin:5px; position:relative;top:-130px;"><iframe width="150" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?q=Gr%F8nland,+Oslo&hl=no&t=m&z=14&output=embed&iwloc=&"></iframe><br/><small><a href="http://maps.google.com/maps?q=Gr%F8nland,+Oslo&hl=no&t=m&z=14&source=embed&iwloc=A" style="color:#0000FF;text-align:left" target="_new">Vis st&oslash;rre kart</a></small></div>
 > En noe tørst tyv var innom utestedet Venner på Grønland og prøvde å ta med seg flere flasker Vodka. Lovens lange arm har kontroll på han 
 - [Operasjonssentralen](http://twitter.com/oslopolitiops/status/226759719262486528)

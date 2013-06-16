@@ -5,6 +5,6 @@ date: 2012-08-21 14:48
 comments: true
 categories: 
 ---
-<div style="float:right; margin:5px; position:relative;top:-130px;"><iframe width="150" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?q=Majorstua%2C%20melding%20om%20skudd%20i%20leilighet%2C%20melder%20fant%20selv%20ut%20etter%20litt%20at%20de%20var%20en%20person%20som%20slo%20en%20eddekopp%20med%20en%20fluesmekker%21%20,+Oslo&hl=no&t=m&z=14&output=embed&iwloc=&"></iframe><br/><small><a href="http://maps.google.com/maps?q=Majorstua%2C%20melding%20om%20skudd%20i%20leilighet%2C%20melder%20fant%20selv%20ut%20etter%20litt%20at%20de%20var%20en%20person%20som%20slo%20en%20eddekopp%20med%20en%20fluesmekker%21%20,+Oslo&hl=no&t=m&z=14&source=embed&iwloc=A" style="color:#0000FF;text-align:left" target="_new">Vis st&oslash;rre kart</a></small></div>
+
 > Majorstua, melding om skudd i leilighet, melder fant selv ut etter litt at de var en person som slo en eddekopp med en fluesmekker! 
 - [Operasjonssentralen](http://twitter.com/oslopolitiops/status/238029914417266688)
