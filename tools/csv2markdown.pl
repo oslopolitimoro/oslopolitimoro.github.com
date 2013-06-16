@@ -15,7 +15,6 @@
 #
 # ------------------------------------------------------------------------
 use v5.10.1;
-
 use strict;
 use warnings;
 use utf8;
@@ -50,14 +49,17 @@ sub generate_mkd_file_from {
     # Map streetnames to Google Maps
     my @streetfiles = ('street.1.txt','street.2.txt');
     my @streetnames = streetmatch::grepstreetnames (@streetfiles);
-    my $htmlmap = streetmatch::matchString2Street (@streetnames,$text);
+    my %htmlmap = streetmatch::matchString2Street (@streetnames,$text);
+    
+    # Replace Street in Tweet with link to Google Maps
+    $text =~ s/\${htmlmap{name}}/"\[$htmlmap{name}\]\[$htmlmap{link}\]/g;
     
     my $content = read_file( \*DATA );    # Get template from __DATA__
     $content =~ s/\<title\>/$title/ig;
     $content =~ s/\<time\>/$date/ig;
     $content =~ s/\<text\>/$text/ig;
     $content =~ s/\<link\>/$link/ig;
-    $content =~ s/\<map\>/${htmlmap}/ig;
+    $content =~ s/\<map\>/${htmlmap{iframe}}/ig;
 
     # Make markdownlinks of the text if available
     $content =~ s|\s(http://[^\s]+)| \[$1\]($1)|;
@@ -72,8 +74,7 @@ sub generate_mkd_file_from {
     $filename =~ s/ø/oe/gi;
     $filename =~ s/æ/ae/gi;
     $filename =~ s/\s+/_/g;
-    $filename =~ s/\_{2,}/\_/g;
-    $filename =~ s/[\;\:\,\.\']+//g;
+    $filename =~ s/[\;\:\,\.]+//g;
     $filename =~ s/\_+$//ig;
     $filename .= ".mkd";
 
