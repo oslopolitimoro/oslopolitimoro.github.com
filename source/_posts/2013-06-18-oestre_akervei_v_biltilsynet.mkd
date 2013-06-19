@@ -1,0 +1,10 @@
+---
+layout: post
+title: "Østre Akervei, v. Biltilsynet, ..."
+date: 2013-06-18 6:03
+comments: true
+categories: 
+---
+<div style="float:right; margin:5px; position:relative;top:-130px;"><iframe width="150" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?q=%D8stre%20Aker%20vei,+Oslo&hl=no&t=m&z=14&output=embed&iwloc=&"></iframe><br/><small><a href="http://maps.google.com/maps?q=%D8stre%20Aker%20vei,+Oslo&hl=no&t=m&z=14&source=embed&iwloc=A" style="color:#0000FF;text-align:left" target="_new">Vis st&oslash;rre kart</a></small></div>
+> Østre Akervei, v. Biltilsynet, mann i elektrisk rullestol, som kjører nordover i vegbanen. Politiet på stedet, intet sett.
+- [Operasjonssentralen](https://twitter.com/oslopolitiops/status/346976448466264067)
