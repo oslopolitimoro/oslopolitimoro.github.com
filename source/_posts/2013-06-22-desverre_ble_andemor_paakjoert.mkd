@@ -1,0 +1,10 @@
+---
+layout: post
+title: "Desverre ble andemor påkjørt ..."
+date: 2013-06-22 19:16
+comments: true
+categories: 
+---
+<div style="float:right; margin:5px; position:relative;top:-130px;"><iframe width="150" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?q=Ring%203,+Oslo&hl=no&t=m&z=14&output=embed&iwloc=&"></iframe><br/><small><a href="http://maps.google.com/maps?q=Ring%203,+Oslo&hl=no&t=m&z=14&source=embed&iwloc=A" style="color:#0000FF;text-align:left" target="_new">Vis st&oslash;rre kart</a></small></div>
+> Desverre ble andemor påkjørt på ring3. Vi har kjørt ungene til Veterinærhøgskolen, slik at de kan vurdere hvor de kan være.
+- [Operasjonssentralen](https://twitter.com/oslopolitiops/status/348489789990924288)
