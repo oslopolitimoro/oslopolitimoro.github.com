@@ -1,0 +1,10 @@
+---
+layout: post
+title: "Frognerstranda: Forsøk på ..."
+date: 2013-07-05 5:29
+comments: true
+categories: 
+---
+<div style="float:right; margin:5px; position:relative;top:-130px;"><iframe width="150" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?q=Frognerstranda,+Oslo&hl=no&t=m&z=14&output=embed&iwloc=&"></iframe><br/><small><a href="http://maps.google.com/maps?q=Frognerstranda,+Oslo&hl=no&t=m&z=14&source=embed&iwloc=A" style="color:#0000FF;text-align:left" target="_new">Vis st&oslash;rre kart</a></small></div>
+> Frognerstranda: Forsøk på å sjøsette båt endte med sjøsetting av båt, bil og henger. Heldigvis ingen personer i vannet.
+- [Operasjonssentralen](https://twitter.com/oslopolitiops/status/353128572900220928)
