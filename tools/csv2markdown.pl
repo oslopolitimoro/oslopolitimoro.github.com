@@ -73,6 +73,9 @@ sub generate_mkd_file_from {
     $filename =~ s/å/aa/gi;
     $filename =~ s/ø/oe/gi;
     $filename =~ s/æ/ae/gi;
+    $filename =~ s/ü/ue/gi;
+    $filename =~ s/ö/oe/gi;
+    $filename =~ s/ä/ae/gi;
     $filename =~ s/\s+/_/g;
     $filename =~ s/[\;\:\,\.]+//g;
     $filename =~ s/\_+$//ig;
