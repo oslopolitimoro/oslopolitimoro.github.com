@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Desverre ble andemor påkjørt ..."
-date: 2013-06-22 19:16
+date: 2013-06-22 10:16
 comments: true
 categories: 
 ---
