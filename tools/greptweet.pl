@@ -33,6 +33,10 @@ die usage() unless @ARGV;
 my $ua = new LWP::UserAgent;
 $ua->timeout(120);
 my $url         = $ARGV[0];
+# Replace the mobile links, they use a different layout.
+$url =~ s/mobile\.twitter\.com/www.twitter.com/i;
+
+
 my $request     = new HTTP::Request( 'GET', $url );
 my $response    = $ua->request($request);
 my $HTMLcontent = $response->content();
