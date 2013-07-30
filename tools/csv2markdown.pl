@@ -79,6 +79,7 @@ sub generate_mkd_file_from {
     $filename =~ s/\s+/_/g;
     $filename =~ s/[\;\:\,\.]+//g;
     $filename =~ s/\_+$//ig;
+    $filename =~ s/\//_/g;
     $filename .= ".mkd";
 
     write_file( $filename, { binmode => ':utf8' }, $content );
