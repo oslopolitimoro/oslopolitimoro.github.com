@@ -1,0 +1,10 @@
+---
+layout: post
+title: "Vi har fått melding om en ..."
+date: 2013-08-08 16:07
+comments: true
+categories: 
+---
+
+> Vi har fått melding om en gris i veibanen på Bygdøy.Bor trolig på Kongsgården
+- [Operasjonssentralen](https://www.twitter.com/oslopolitiops/status/365610193184235521?p=v)
