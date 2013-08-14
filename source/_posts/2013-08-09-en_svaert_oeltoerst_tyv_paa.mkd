@@ -1,0 +1,10 @@
+---
+layout: post
+title: "En svært øltørst tyv, på ..."
+date: 2013-08-09 11:55
+comments: true
+categories: 
+---
+<div style="float:right; margin:5px; position:relative;top:-130px;"><iframe width="150" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?q=Toppen,+Oslo&hl=no&t=m&z=14&output=embed&iwloc=&"></iframe><br/><small><a href="http://maps.google.com/maps?q=Toppen,+Oslo&hl=no&t=m&z=14&source=embed&iwloc=A" style="color:#0000FF;text-align:left" target="_new">Vis st&oslash;rre kart</a></small></div>
+> En svært øltørst tyv, på Lambertseter, hadde fylt opp en hel sykkeltilhenger med flere hundre ølbokser. I arresten er det ikke noe øl.
+- [Operasjonssentralen](https://www.twitter.com/oslopolitiops/status/365909263291387904?p=v)
