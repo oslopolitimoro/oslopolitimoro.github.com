@@ -61,8 +61,9 @@ sub generate_mkd_file_from {
     $content =~ s/\<link\>/$link/ig;
     $content =~ s/\<map\>/${htmlmap{iframe}}/ig;
 
-    # Make markdownlinks of the text if available
+    # Make markdownlinks of the text and images if available
     $content =~ s|\s(http://[^\s]+)| \[$1\]($1)|;
+    $content =~ s|\s(pic.twitter.com/[^\s]+)| \[Bild](http://$1)|;
     
     # Link paragraphs to the norwegian law
     $content =~ s|§\s?(\d{1,4})|\[§ $1\](http://www.lovdata.no/all/hl-19020522-010.html#$1)|gi;
