@@ -1,0 +1,10 @@
+---
+layout: post
+title: "Tullins gate: Melding om forsøk ..."
+date: 2013-11-13 15:59
+comments: true
+categories: 
+---
+<div style="float:right; margin:5px; position:relative;top:-130px;"><iframe width="150" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?q=Tullins%20gate,+Oslo&hl=no&t=m&z=14&output=embed&iwloc=&"></iframe><br/><small><a href="http://maps.google.com/maps?q=Tullins%20gate,+Oslo&hl=no&t=m&z=14&source=embed&iwloc=A" style="color:#0000FF;text-align:left" target="_new">Vis st&oslash;rre kart</a></small></div>
+> Tullins gate: Melding om forsøk på sykkeltyveri. Vi har kontroll på en person. Mistenkte tatt bærende på både sykkel og stativ.
+- [Operasjonssentralen](https://twitter.com/oslopolitiops/status/400774834080083968)
