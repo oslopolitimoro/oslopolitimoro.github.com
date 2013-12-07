@@ -52,7 +52,7 @@ Når var Oslopolitiet morsomst?
                             strokeColor : "rgba(151,187,205,1)",
                             pointColor : "rgba(151,187,205,1)",
                             pointStrokeColor : "#fff",
-                            data : [11,16,10,18,29,24,34,29,20,22,0,0]
+                            data : [11,16,10,18,29,24,34,29,20,22,16,0]
                     },
             ]
     };
