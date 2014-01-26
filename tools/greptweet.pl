@@ -18,6 +18,8 @@
 # Update: 20130219: Date matching syntax updated due to changes in the sourcecode of the Twitter webpage.
 # Update: 20130517: Matching for Text/title failed due to changes in the sourcecode of the Twitter webpage.
 # Update: 20130528: Changed Regex for matching metadata. Failed because they've changed it again.
+# Update: 20140126: Changed Regex for matching metadata. Failed because they(TM) changed it again.
+#           Fixed the problem with quotes in tweets.
 # ------------------------------------------------------------------------
 use v5.10.1;
 
@@ -33,9 +35,9 @@ die usage() unless @ARGV;
 my $ua = new LWP::UserAgent;
 $ua->timeout(120);
 my $url         = $ARGV[0];
+
 # Replace the mobile links, they use a different layout.
 $url =~ s/mobile\.twitter\.com/www.twitter.com/i;
-
 
 my $request     = new HTTP::Request( 'GET', $url );
 my $response    = $ua->request($request);
@@ -46,39 +48,43 @@ my $tree = HTML::TreeBuilder->new_from_content($HTMLcontent);
 $tree->parse($HTMLcontent);
 $tree->eof();
 
-my $title      = $tree->look_down( '_tag',  'title' );         # Get Tweet Title
-my $searchtext = $tree->look_down( 'class', 'js-tweet-text tweet-text' ); # Get Tweet Text
-
-# Get Tweet Timestamp line by parsing downwards
-my $tweettimestamp = $tree->look_down( "_tag", "span", "class", "metadata");
-#my $tweettimestamp = $tree->look_down( "_tag", "a", "class","tweet-timestamp js-permalink js-nav" );
+my $title           = $tree->look_down( '_tag',  'title' );                                  # Get Tweet Title
+my $searchtext      = $tree->look_down( '_tag', 'p', 'class', 'js-tweet-text tweet-text' );  # Get Tweet Text
+my $tweettimestamp  = $tree->look_down( "class", "metadata");                                # Get Tweet Timestamp
 
 # Get and format title (without the stupid "Twitter / <account>: "-stuff), we don't want that
-my $HTMLTitle = $title->as_text();
-$HTMLTitle =~ s/^[^\:]+\:\s//i;
-$HTMLTitle =~ s/\;/\&#59;/i;
+my $HTMLTitle   = $title->as_text();
+$HTMLTitle      =~ s/^[^\:]+\:\s//i;
+$HTMLTitle      =~ s/\;/\&#59;/i;
 
 # Get and format the text without leading spaces
-my $HTMLText = $searchtext->as_text();
-$HTMLText =~ s/^\s+//i;
-$HTMLText =~ s/;/\&#59;/i;
+my $HTMLText    = $searchtext->as_text();
+$HTMLText       =~ s/^\s+//i;
+$HTMLText       =~ s/;/\&#59;/i;
+$HTMLText       =~ s/\"/&#34;/g;
 
 # Grep and format the Tweet timestamp.
 #my $HTMLTime = $tweettimestamp->as_HTML();
-my $HTMLTime = $tweettimestamp->as_text();
+my $HTMLTime    = $tweettimestamp->as_text();
 
-$HTMLTime =~ m/\s+(?<hour>\d{1,2})(\:|\.)(?<minute>\d{1,2})\s(?<meridiem>\w{2})\s(\W)+(?<day>\d{1,2})\.\s(?<month>\w{3})\s(?<year>\d{2})\s+/i;
+# Match date format: ' 07.14 - 24. jan. 2014 '
+$HTMLTime       =~ m/\s+(?<hour>\d{1,2})(\:|\.)(?<minute>\d{1,2})\s\-\s(?<day>\d{1,2})\.\s(?<month>[a-z]{3})\.\s(?<year>\d{4})\s+/i;
+# Other format with meridiem
+# $HTMLTime       =~ m/\s+(?<hour>\d{1,2})(\:|\.)(?<minute>\d{1,2})\s(?<meridiem>\w{2})\s(\W)+(?<day>\d{1,2})\.\s(?<month>\w{3})\s(?<year>\d{2})\s+/i;
 
 my $tweethour   = $+{hour};
 my $tweetminute = $+{minute};
 my $tweetday    = $+{day};
-my $tweetyear   = "20" . $+{year};
-my $meridiem    = $+{meridiem};
+my $tweetmonth  = $+{month};
+my $tweetyear   = $+{year};
+my $meridiem    = '';
+# my $meridiem    = $+{meridiem};  # Disabled until they(TM) switch it on again.
+
 my %mon2num     = qw(
   jan 1  feb 2  mar 3  apr 4  mai 5  jun 6
   jul 7  aug 8  sep 9  okt 10 nov 11 des 12
 );
-my $tweetmonth = $mon2num{"$+{month}"};
+$tweetmonth = $mon2num{"$tweetmonth"};
 
 if ( $meridiem eq 'PM' ) { $tweethour += 12; }
 if ( $tweethour == '24') { $tweethour = '00' }
