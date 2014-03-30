@@ -1,0 +1,10 @@
+---
+layout: post
+title: "En motorbåt er stjålet fra ..."
+date: 2014-03-28 14:32
+comments: true
+categories: 
+---
+<div style="float:right; margin:5px; position:relative;top:-130px;"><iframe width="150" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?q=Kongshavn,+Oslo&hl=no&t=m&z=14&output=embed&iwloc=&"></iframe><br/><small><a href="http://maps.google.com/maps?q=Kongshavn,+Oslo&hl=no&t=m&z=14&source=embed&iwloc=A" style="color:#0000FF;text-align:left" target="_new">Vis st&oslash;rre kart</a></small></div>
+> En motorbåt er stjålet fra Kongshavn for kort tid siden. Politihelikopteret har nå observasjon på antatt rett båt utenfor Nesoddlandet
+- [Operasjonssentralen](https://twitter.com/oslopolitiops/status/449660316449009664)

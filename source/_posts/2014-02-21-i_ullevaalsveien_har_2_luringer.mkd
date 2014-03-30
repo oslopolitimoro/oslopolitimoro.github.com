@@ -1,0 +1,10 @@
+---
+layout: post
+title: "I Ullevålsveien har 2 luringer ..."
+date: 2014-02-21 16:33
+comments: true
+categories: 
+---
+<div style="float:right; margin:5px; position:relative;top:-130px;"><iframe width="150" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?q=Ullev%E5lsveien,+Oslo&hl=no&t=m&z=14&output=embed&iwloc=&"></iframe><br/><small><a href="http://maps.google.com/maps?q=Ullev%E5lsveien,+Oslo&hl=no&t=m&z=14&source=embed&iwloc=A" style="color:#0000FF;text-align:left" target="_new">Vis st&oslash;rre kart</a></small></div>
+> I Ullevålsveien har 2 luringer klatret opp i en meget høy byggekran. De gjemmer seg og ønsker ikke å snakke med patruljen på stedet
+- [Operasjonssentralen](https://twitter.com/oslopolitiops/status/437022388535193600)

@@ -1,0 +1,10 @@
+---
+layout: post
+title: "Øvre Slottsgate: Klage på ..."
+date: 2014-03-21 05:45
+comments: true
+categories: 
+---
+<div style="float:right; margin:5px; position:relative;top:-130px;"><iframe width="150" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?q=%D8vre%20slottsgate,+Oslo&hl=no&t=m&z=14&output=embed&iwloc=&"></iframe><br/><small><a href="http://maps.google.com/maps?q=%D8vre%20slottsgate,+Oslo&hl=no&t=m&z=14&source=embed&iwloc=A" style="color:#0000FF;text-align:left" target="_new">Vis st&oslash;rre kart</a></small></div>
+> Øvre Slottsgate: Klage på gatemusikkant som bruker forsterker og høyttaler. Bedt om å synge og spille uten det.
+- [Operasjonssentralen](https://twitter.com/oslopolitiops/status/446990910044532736)

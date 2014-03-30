@@ -1,0 +1,10 @@
+---
+layout: post
+title: "Noen veldig unge barn ringte ..."
+date: 2014-03-27 10:55
+comments: true
+categories: 
+---
+<div style="float:right; margin:5px; position:relative;top:-130px;"><iframe width="150" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?q=Slettel%F8kka,+Oslo&hl=no&t=m&z=14&output=embed&iwloc=&"></iframe><br/><small><a href="http://maps.google.com/maps?q=Slettel%F8kka,+Oslo&hl=no&t=m&z=14&source=embed&iwloc=A" style="color:#0000FF;text-align:left" target="_new">Vis st&oslash;rre kart</a></small></div>
+> Noen veldig unge barn ringte oss og savnet sine venner fra området Sletteløkka. Patrulje hjalp dem med å finne vennene sine. Gjensynsglede.
+- [Operasjonssentralen](https://twitter.com/oslopolitiops/status/449243219625512960)

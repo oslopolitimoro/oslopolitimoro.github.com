@@ -1,0 +1,10 @@
+---
+layout: post
+title: "Vi har kontroll på den aktuelle ..."
+date: 2014-03-07 16:49
+comments: true
+categories: 
+---
+
+> Vi har kontroll på den aktuelle taxien med de mistenkte om bord på Majorstua.
+- [Operasjonssentralen](https://twitter.com/oslopolitiops/status/442099773932589056)

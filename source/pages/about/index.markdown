@@ -29,6 +29,9 @@ Når var Oslopolitiet morsomst?
 
 # 2013
 <canvas id="canvas2" height="450" width="1024"></canvas>
+
+# 2014
+<canvas id="canvas3" height="450" width="1024"></canvas>
 <script type="text/javascript">
 
     var lineChartData2012 = {
@@ -57,6 +60,18 @@ Når var Oslopolitiet morsomst?
             ]
     };
 
+    var lineChartData2014 = {
+            labels : ["Januar","Februar","Mars","April","Mai","Juni","Juli","August","September","Oktober","November","Desember"],
+            datasets : [
+                    {
+                            fillColor : "rgba(151,187,205,0.5)",
+                            strokeColor : "rgba(151,187,205,1)",
+                            pointColor : "rgba(151,187,205,1)",
+                            pointStrokeColor : "#fff",
+                            data : [15,16,24,0,0,0,0,0,0,0,0,0]
+                    },
+            ]
+    };
     var opts2012 = {
         scaleOverride : true,    
         scaleSteps : 18,
@@ -69,7 +84,14 @@ Når var Oslopolitiet morsomst?
         scaleStepWidth : 1,
         scaleStartValue : 0,
     };
+    var opts2014 = {
+        scaleOverride : true,    
+        scaleSteps : 40,
+        scaleStepWidth : 1,
+        scaleStartValue : 0,
+    };
     var myLine = new Chart(document.getElementById("canvas1").getContext("2d")).Line(lineChartData2012, opts2012);
     var myLine = new Chart(document.getElementById("canvas2").getContext("2d")).Line(lineChartData2013, opts2013);
+    var myLine = new Chart(document.getElementById("canvas3").getContext("2d")).Line(lineChartData2014, opts2014);
 
 </script>	
