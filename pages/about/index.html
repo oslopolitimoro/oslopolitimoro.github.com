@@ -168,6 +168,10 @@ owa_cmds.push(['trackDomStream']);
 
 <p><canvas id="canvas2" height="450" width="1024"></canvas></p>
 
+<h1>2014</h1>
+
+<p><canvas id="canvas3" height="450" width="1024"></canvas></p>
+
 <script type="text/javascript">
 
     var lineChartData2012 = {
@@ -196,6 +200,18 @@ owa_cmds.push(['trackDomStream']);
             ]
     };
 
+    var lineChartData2014 = {
+            labels : ["Januar","Februar","Mars","April","Mai","Juni","Juli","August","September","Oktober","November","Desember"],
+            datasets : [
+                    {
+                            fillColor : "rgba(151,187,205,0.5)",
+                            strokeColor : "rgba(151,187,205,1)",
+                            pointColor : "rgba(151,187,205,1)",
+                            pointStrokeColor : "#fff",
+                            data : [15,16,24,0,0,0,0,0,0,0,0,0]
+                    },
+            ]
+    };
     var opts2012 = {
         scaleOverride : true,    
         scaleSteps : 18,
@@ -208,8 +224,15 @@ owa_cmds.push(['trackDomStream']);
         scaleStepWidth : 1,
         scaleStartValue : 0,
     };
+    var opts2014 = {
+        scaleOverride : true,    
+        scaleSteps : 40,
+        scaleStepWidth : 1,
+        scaleStartValue : 0,
+    };
     var myLine = new Chart(document.getElementById("canvas1").getContext("2d")).Line(lineChartData2012, opts2012);
     var myLine = new Chart(document.getElementById("canvas2").getContext("2d")).Line(lineChartData2013, opts2013);
+    var myLine = new Chart(document.getElementById("canvas3").getContext("2d")).Line(lineChartData2014, opts2014);
 
 </script>
 
@@ -263,23 +286,23 @@ owa_cmds.push(['trackDomStream']);
     <li class="nav-header">Recent Posts</li>
     
       <li class="post">
-        <a href="/blog/2014/02/11/vi_er_paa_vei/">Vi er på vei ...</a>
+        <a href="/blog/2014/03/28/viste_seg_aa_vaere_en_overivrig/">Viste seg å være en overivrig ...</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2014/02/11/vi_er_ferdige_paa_stedet_en/">Vi er ferdige på stedet. En ...</a>
+        <a href="/blog/2014/03/28/en_motorbaat_er_stjaalet_fra/">En motorbåt er stjålet fra ...</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2014/02/11/vi_er_paa_vei_til_christian/">Vi er på vei til Christian ...</a>
+        <a href="/blog/2014/03/27/noen_veldig_unge_barn_ringte/">Noen veldig unge barn ringte ...</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2014/02/11/vi_har_kontroll_paa_de_to/">vi har kontroll på de to ...</a>
+        <a href="/blog/2014/03/22/vi_har_plukka_opp_en_mann_som/">vi har plukka opp en mann som ...</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2014/02/11/operatunnelen_oestgaaende/">Operatunnelen, østgående, ...</a>
+        <a href="/blog/2014/03/22/festningstunnelen_vestgaaende/">Festningstunnelen, vestgående, ...</a>
       </li>
     
   </ul>
